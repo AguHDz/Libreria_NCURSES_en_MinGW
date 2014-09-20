@@ -1,5 +1,5 @@
 Instalar Librería Ncurses en compilador MinGW C/C++
-===================================================
+============
 
 Para trabajar con la pantalla de "MS-DOS" o ventana de comandos en Windows, tradicionalmente se ha empleado en C la librería <conio.h>. Sin embargo esta librería es muy antigua y no estandar del lenguaje C/C++. La librería estándar y mucho más potente en cuanto a recursos es <ncurses.h>
 
