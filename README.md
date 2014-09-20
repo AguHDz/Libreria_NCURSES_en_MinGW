@@ -54,5 +54,10 @@ Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para W
 
 3) Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el
 compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
-3.a) Abrimos CodeBlocks y accedemos al menú [n]Setting[/n] de la barra superior (File, Edit, View.... Setting)
+3.a) Abrimos CodeBlocks y accedemos al menú Setting de la barra superior (File, Edit, View.... Setting)
+3.b) Settings --> Compiler... Pestaña Linker setting y añadimos la dirección de los fichero C:\CodeBlocks\win32. Habrá pdcurses.* y panel.* donde * puede ser .a o .so (En mi caso: pdcurses.a y panel.a)
+
+
+(Add) GNU GCC Compiler --> Compiler Flags, activamos informar de todas las alertas -Wall
+Toolchain executables --> Compiler's instalation directory tiene que ser la dirección donde está el CodeBlocks\MinGW (ej: C:\CodeBlocks\MinGW). Al pinchar autodetect se detecta.
 
