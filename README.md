@@ -1,4 +1,4 @@
-Instalar Librería Ncurses en compiladro C/C++ MinGW
+Instalar Librería Ncurses en compilador MinGW C/C++
 ===================================================
 
 Para trabajar con la pantalla de "MS-DOS" o ventana de comandos en Windows, tradicionalmente
@@ -22,10 +22,37 @@ Por ser en la fecha en que escribo este documente uno de los que parece que est�
 de desarrolladores a la vista de sus actualizaciones, lo voy a escoger para explicar el proceso de
 instalación de la librería Ncurses en el compilador MinCW para entorno Windows.
 
-1.-Si no tienes instalado CodeBlocks, debes empezar por ahí, o si estás acostumbrado a trabajar con
+1) Si no tienes instalado CodeBlocks, debes empezar por ahí, o si estás acostumbrado a trabajar con
 otro IDE, pasaté directamente al paso 2.
-1.1 Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org.
+1.a) Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org.
 Elegimos ¨Download the binary release¨, para Windows XP/Vista/7. Bajas el programa con soporte
 mingw (ej: codeblocks-13.12mingw-setup-TDM-GCC-481.exe)
-1.2. Instalamos el programa en la siguiente ruta. C:\CodeBlocks . Instalar version completa (complete
+1.b) Instalamos el programa en la siguiente ruta. C:\CodeBlocks . Instalar version completa (complete
 instalation)
+
+2) Instalamos la librería en el compilador MinGW
+2.a) Entramos a pdcurses.sourceforge.net
+2.b) Elegimos la versión más reciente (en Septiembre de 2014, la 3.4). Descargamos el archivo pdcursxx.zip
+donde xx es la versión. (En el momento de escribir este documento: pdcurs34.zip).
+2.c) Creamos el directorio pdcurs34 dentro del de CodeBlocks (Nuevo directorio: C:\CodeBlocks\pdcurs34) y
+descomprimimos el contenido de pdcurs34.zip)
+2.d) Ahora toca compilar la nueva librería para que pueda usarla MinGW:
+2.d.1) Abrimos la consola de comandos de Windows (Inicio - Ejecutar - cmd o [win+R] - cmd) y escribimos
+los siguiente comandos:
+
+            cd C:\
+            set PDCURSES_SRCDIR=C:\CodeBlocks\pdcurs34
+            path=c:\codeblocks\mingw\bin
+            cd C:\CodeBlocks\pdcurs34
+            cd win32
+            mingw32-make -f mingwin32.mak
+
+Tras la última línea tiene que comenzar la compilación cuyo proceso ira mostrandos información en la pantalla
+sin que deba aparecer ningún mensaje de error.
+
+Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
+
+3) Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el
+compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
+3.a) Abrimos CodeBlocks y accedemos al menú [n]Setting[/n] de la barra superior (File, Edit, View.... Setting)
+
