@@ -65,11 +65,11 @@ Y con esto ya debería funcionar sin ningún problema el siquiente programa de p
             
             int main()
             {
-                initscr();		/* Start curses mode 		*/
-                printw("Hello World !!!");      /* Print Hello World		*/
-                refresh();		/* Print it on to the real screen   */
-                getch();		/* Wait for user input              */
-                endwin();		/* End curses mode		*/
+                initscr();                 /* Start curses mode               */
+                printw("Hello World !!!"); /* Print Hello World               */
+                refresh();                 /* Print it on to the real screen  */
+                getch();                   /* Wait for user input             */
+                endwin();                  /* End curses mode                 */
             
                 return 0;
             }
