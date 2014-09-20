@@ -13,17 +13,17 @@ Pero primero una aclaración: MinGW es un compilador C/C++ que se usa desde la l
 
 Por ser en la fecha en que escribo este documente uno de los que parece que está apoyando la comunidad de desarrolladores a la vista de sus actualizaciones, lo voy a escoger para explicar el proceso de instalación de la librería Ncurses en el compilador MinCW para entorno Windows.
 
-## Intalar IDE de programación y compilador MinGW
+## 1. Intalar IDE de programación y compilador MinGW
 
-1) Si no tienes instalado CodeBlocks, debes empezar por ahí, o si estás acostumbrado a trabajar con otro IDE, pasaté directamente al paso 2.
+Si no tienes instalado CodeBlocks, debes empezar por ahí, o si estás acostumbrado a trabajar con otro IDE, pasaté directamente al paso 2.
 
 - Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org. Elegimos "Download the binary release", para Windows XP/Vista/7. Bajas el programa con soporte mingw (ej: codeblocks-13.12mingw-setup-TDM-GCC-481.exe)
 
 - Instalamos el programa en la siguiente ruta. C:\CodeBlocks . Instalar version completa (complete instalation)
 
-## Compilar nueva librería en MinGW
+## 2. Compilar nueva librería en MinGW
 
-2) Instalamos la librería en el compilador MinGW
+Instalamos la librería en el compilador MinGW
 
 - Entramos a http://pdcurses.sourceforge.net
 
@@ -44,9 +44,9 @@ Tras la última línea tiene que comenzar la compilación cuyo proceso ira mostr
 
 Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
 
-##Configurar incorporación de nueva librería en el entorno IDE de programación CodeBlocks
+##3) Configurar incorporación de nueva librería en el entorno IDE de programación CodeBlocks
 
-3) Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
+Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
 
 - Abrimos CodeBlocks y accedemos al menú Setting de la barra superior (File, Edit, View.... *Setting*)
 
