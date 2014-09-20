@@ -27,8 +27,8 @@ Por ser en la fecha en que escribo este documente uno de los que parece que est�
 2.b) Elegimos la versión más reciente (en Septiembre de 2014, la 3.4). Descargamos el archivo pdcursxx.zip donde xx es la versión. (En el momento de escribir este documento: pdcurs34.zip).
 
 2.c) Creamos el directorio pdcurs34 dentro del de CodeBlocks (Nuevo directorio: C:\CodeBlocks\pdcurs34) y descomprimimos el contenido de pdcurs34.zip)
-2.d) Ahora toca compilar la nueva librería para que pueda usarla MinGW:
-2.d.1) Abrimos la consola de comandos de Windows (Inicio - Ejecutar - cmd o [win+R] - cmd) y escribimos los siguientes comandos:
+
+2.d) Ahora toca, tal vez la parte más importante, compilar la nueva librería para que pueda usarla MinGW. Para ello, abrimos la consola de comandos de Windows (Inicio --> Ejecutar --> cmd o [win+R] --> cmd) y escribimos cada una de las siguientes comandos seguidas de Enter:
 
             cd C:\
             set PDCURSES_SRCDIR=C:\CodeBlocks\pdcurs34
