@@ -50,7 +50,7 @@ Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librer�
 
 - Abrimos Code::Blocks y accedemos al menú `Setting` de la barra superior (File, Edit, View.... `Setting`)
 
-- `Settings` --> `Compiler`... Pestaña `Linker setting` y añadimos (botón **Add**) la dirección de los fichero *C:\CodeBlocks\pdcurs34\win32*. Habrá dos ficheros con los nombre *pdcurses* y *panel* y cuyas extensiones podrán ser .a o .so (En mi caso: pdcurses.a y panel.a)
+- `Settings` --> `Compiler`... Pestaña `Linker setting` y añadimos (botón ``Add``) la dirección de los fichero *C:\CodeBlocks\pdcurs34\win32*. Habrá dos ficheros con los nombre *pdcurses* y *panel* y cuyas extensiones podrán ser .a o .so (En mi caso: pdcurses.a y panel.a)
 
 - `Settings` --> `Compiler`... Pestaña `Searh directores` y cada una de las SubPestañas `Compiler`, `Linker` y `Resource Compiler` añadimos (botón **Add**) la dirección *C:\CodeBlocks\pdcurs34*.
 
