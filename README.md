@@ -21,7 +21,7 @@ Por ser en la fecha en que escribo este documente uno de los que parece que est�
 
 2) Instalamos la librería en el compilador MinGW
 
-2.a) Entramos a pdcurses.sourceforge.net
+2.a) Entramos a http://pdcurses.sourceforge.net
 
 2.b) Elegimos la versión más reciente (en Septiembre de 2014, la 3.4). Descargamos el archivo pdcursxx.zip donde xx es la versión. (En el momento de escribir este documento: pdcurs34.zip).
 
