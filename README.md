@@ -17,21 +17,21 @@ Por ser en la fecha en que escribo este documente uno de los que parece que est�
 
 1) Si no tienes instalado CodeBlocks, debes empezar por ahí, o si estás acostumbrado a trabajar con otro IDE, pasaté directamente al paso 2.
 
- - Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org. Elegimos "Download the binary release", para Windows XP/Vista/7. Bajas el programa con soporte mingw (ej: codeblocks-13.12mingw-setup-TDM-GCC-481.exe)
+- Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org. Elegimos "Download the binary release", para Windows XP/Vista/7. Bajas el programa con soporte mingw (ej: codeblocks-13.12mingw-setup-TDM-GCC-481.exe)
 
- - Instalamos el programa en la siguiente ruta. C:\CodeBlocks . Instalar version completa (complete instalation)
+- Instalamos el programa en la siguiente ruta. C:\CodeBlocks . Instalar version completa (complete instalation)
 
 ## Compilar nueva librería en MinGW
 
 2) Instalamos la librería en el compilador MinGW
 
-2.a) Entramos a http://pdcurses.sourceforge.net
+- Entramos a http://pdcurses.sourceforge.net
 
-2.b) Elegimos la versión más reciente (en Septiembre de 2014, la 3.4). Descargamos el archivo pdcursxx.zip donde xx es la versión. (En el momento de escribir este documento: pdcurs34.zip).
+- Elegimos la versión más reciente (en Septiembre de 2014, la 3.4). Descargamos el archivo pdcursxx.zip donde xx es la versión. (En el momento de escribir este documento: pdcurs34.zip).
 
-2.c) Creamos el directorio pdcurs34 dentro del de CodeBlocks (Nuevo directorio: C:\CodeBlocks\pdcurs34) y descomprimimos el contenido de pdcurs34.zip)
+- Creamos el directorio pdcurs34 dentro del de CodeBlocks (Nuevo directorio: C:\CodeBlocks\pdcurs34) y descomprimimos el contenido de pdcurs34.zip)
 
-2.d) Ahora toca, tal vez la parte más importante, compilar la nueva librería para que pueda usarla MinGW. Para ello, abrimos la consola de comandos de Windows (Inicio --> Ejecutar --> cmd o [win+R] --> cmd) y escribimos cada una de las siguientes comandos seguidas de Enter:
+- Ahora toca, tal vez la parte más importante, compilar la nueva librería para que pueda usarla MinGW. Para ello, abrimos la consola de comandos de Windows (*Inicio --> Ejecutar --> cmd o [win+R] --> cmd*) y escribimos cada una de las siguientes comandos seguidas de Enter:
 
             cd C:\
             set PDCURSES_SRCDIR=C:\CodeBlocks\pdcurs34
@@ -44,16 +44,17 @@ Tras la última línea tiene que comenzar la compilación cuyo proceso ira mostr
 
 Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
 
+##Configurar incorporación de nueva librería en el entorno IDE de programación CodeBlocks
 
 3) Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
 
-3.a) Abrimos CodeBlocks y accedemos al menú Setting de la barra superior (File, Edit, View.... Setting)
+- Abrimos CodeBlocks y accedemos al menú Setting de la barra superior (File, Edit, View.... *Setting*)
 
-3.b) Settings --> Compiler... Pestaña Linker setting y añadimos (Add) la dirección de los fichero C:\CodeBlocks\pdcurs34\win32. Habrá pdcurses.* y panel.* donde * puede ser .a o .so (En mi caso: pdcurses.a y panel.a)
+- *Settings --> Compiler...* Pestaña *Linker setting* y añadimos (botón Add) la dirección de los fichero C:\CodeBlocks\pdcurs34\win32. Habrá dos ficheros con los nombre *pdcurses* y *panel* y cuyas extensiones podrán ser .a o .so (En mi caso: pdcurses.a y panel.a)
 
-3.c) Settings --> Compiler... Pestaña Searh directores y cada una de las SubPestañas Compiler, Linker y Resource Compiler añadimos (Add) la dirección C:\CodeBlocks\pdcurs34
+- *Settings --> Compiler...* Pestaña *Searh directores* y cada una de las SubPestañas *Compiler*, *Linker* y *Resource Compiler* añadimos (botón Add) la dirección C:\CodeBlocks\pdcurs34
 
-3.d) Y por último, Settings --> Compiler... Pestaña Toolchain executables donde debería aparecer la C:\CodeBlocks\MinGW, pulsamos boton Auto-detect
+- Y por último, *Settings --> Compiler...* Pestaña *Toolchain executables* donde debería aparecer la C:\CodeBlocks\MinGW, pulsamos botón Auto-detect
 
 Y con esto ya debería funcionar sin ningún problema el siquiente programa de prueba:
 
