@@ -52,7 +52,7 @@ Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librer�
 
 - *Settings --> Compiler...* Pestaña *Linker setting* y añadimos (botón **Add**) la dirección de los fichero `C:\CodeBlocks\pdcurs34\win32`. Habrá dos ficheros con los nombre *pdcurses* y *panel* y cuyas extensiones podrán ser .a o .so (En mi caso: pdcurses.a y panel.a)
 
-- *Settings --> Compiler...* Pestaña *Searh directores* y cada una de las SubPestañas *Compiler*, *Linker* y *Resource Compiler* añadimos (botón **Add**) la dirección C:\CodeBlocks\pdcurs34
+- *Settings --> Compiler...* Pestaña *Searh directores* y cada una de las SubPestañas *Compiler*, *Linker* y *Resource Compiler* añadimos (botón **Add**) la dirección `C:\CodeBlocks\pdcurs34`.
 
 - Y por último, *Settings --> Compiler...* Pestaña *Toolchain executables* donde debería aparecer la `C:\CodeBlocks\MinGW`, pulsamos botón **Auto-detect**.
 
