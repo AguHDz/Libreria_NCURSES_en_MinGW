@@ -44,11 +44,11 @@ Tras la última línea tiene que comenzar la compilación cuyo proceso ira mostr
 
 Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
 
-##3) Configurar incorporación de nueva librería en el entorno IDE de programación CodeBlocks
+##3. Configurar incorporación de nueva librería en el entorno IDE de programación CodeBlocks
 
 Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
 
-- Abrimos CodeBlocks y accedemos al menú Setting de la barra superior (File, Edit, View.... *Setting*)
+- Abrimos CodeBlocks y accedemos al menú *Setting* de la barra superior (File, Edit, View.... *Setting*)
 
 - *Settings --> Compiler...* Pestaña *Linker setting* y añadimos (botón Add) la dirección de los fichero C:\CodeBlocks\pdcurs34\win32. Habrá dos ficheros con los nombre *pdcurses* y *panel* y cuyas extensiones podrán ser .a o .so (En mi caso: pdcurses.a y panel.a)
 
