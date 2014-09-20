@@ -72,6 +72,8 @@ Y con esto ya debería funcionar sin ningún problema el siquiente programa de p
             }
 
 
+
+
 Quienes me han ayudado a realizar este documento:
 - http://valijon.blogspot.com.es/2011/01/ejecutar-ncurses-en-windows.html
 - https://www.youtube.com/watch?v=mYnfix8ruAo
