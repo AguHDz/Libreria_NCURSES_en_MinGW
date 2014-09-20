@@ -15,9 +15,10 @@ Por ser en la fecha en que escribo este documente uno de los que parece que est�
 
 1) Si no tienes instalado CodeBlocks, debes empezar por ahí, o si estás acostumbrado a trabajar con otro IDE, pasaté directamente al paso 2.
 
-1.a) Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org. Elegimos ¨Download the binary release¨, para Windows XP/Vista/7. Bajas el programa con soporte mingw (ej: codeblocks-13.12mingw-setup-TDM-GCC-481.exe)
+1.a) Si no tienes ya instalado CodeBlocks, lo puedes instalar entrando en http://www.codeblocks.org. Elegimos "Download the binary release", para Windows XP/Vista/7. Bajas el programa con soporte mingw (ej: codeblocks-13.12mingw-setup-TDM-GCC-481.exe)
 
 1.b) Instalamos el programa en la siguiente ruta. C:\CodeBlocks . Instalar version completa (complete instalation)
+
 
 2) Instalamos la librería en el compilador MinGW
 
@@ -39,6 +40,7 @@ Por ser en la fecha en que escribo este documente uno de los que parece que est�
 Tras la última línea tiene que comenzar la compilación cuyo proceso ira mostrandos información en la pantalla sin que deba aparecer ningún mensaje de error.
 
 Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
+
 
 3) Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
 
