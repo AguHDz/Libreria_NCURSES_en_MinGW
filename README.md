@@ -55,9 +55,26 @@ Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para W
 3) Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el
 compilador. Si instalaste la distribución CodeBlocks sigue los siguientes pasos:
 3.a) Abrimos CodeBlocks y accedemos al menú Setting de la barra superior (File, Edit, View.... Setting)
-3.b) Settings --> Compiler... Pestaña Linker setting y añadimos la dirección de los fichero C:\CodeBlocks\win32. Habrá pdcurses.* y panel.* donde * puede ser .a o .so (En mi caso: pdcurses.a y panel.a)
+3.b) Settings --> Compiler... Pestaña Linker setting y añadimos (Add) la dirección de los fichero C:\CodeBlocks\pdcurs34\win32. Habrá pdcurses.* y panel.* donde * puede ser .a o .so (En mi caso: pdcurses.a y panel.a)
+3.c) Settings --> Compiler... Pestaña Searh directores y cada una de las SubPestañas Compiler, Linker y Resource Compiler añadimos (Add) la dirección C:\CodeBlocks\pdcurs34
+3.d) Y por último, Settings --> Compiler... Pestaña Toolchain executables donde debería aparecer la C:\CodeBlocks\MinGW, pulsamos boton Auto-detect
+
+Y con esto ya debería funcionar sin ningún problema el siquiente programa de prueba:
+
+            #include <curses.h>
+            
+            int main()
+            {
+                initscr();		/* Start curses mode 		*/
+                printw("Hello World !!!");      /* Print Hello World		*/
+                refresh();		/* Print it on to the real screen   */
+                getch();		/* Wait for user input              */
+                endwin();		/* End curses mode		*/
+            
+                return 0;
+            }
 
 
-(Add) GNU GCC Compiler --> Compiler Flags, activamos informar de todas las alertas -Wall
-Toolchain executables --> Compiler's instalation directory tiene que ser la dirección donde está el CodeBlocks\MinGW (ej: C:\CodeBlocks\MinGW). Al pinchar autodetect se detecta.
+
+
 
