@@ -44,7 +44,7 @@ Tras la última línea tiene que comenzar la compilación, cuyo proceso ira most
 
 Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
 
-## 3. Incorporar la nueva librería en el entorno IDE de programación de Code::Blocks.
+## 3. Incorporar la nueva librería en el IDE Code::Blocks.
 
 Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución **Code::Blocks** sigue los siguientes pasos:
 
