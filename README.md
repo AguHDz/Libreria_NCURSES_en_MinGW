@@ -9,7 +9,7 @@ Existe otra biblioteca que se llama **PDCurses** para plataformas DOS y WIN32.
 
 Para instalarla en cualquiera de las distribuciones del compilador libre y gratuito **MinGW**, es necesario seguir los siguientes pasos:
 
->*Pero primero una aclaración: MinGW es un compilador C/C++ que se usa desde la línea de comandos, sin embargo lo habitual es que vaya acompañado de un editor y entorno IDE que facilita su uso y la organización de proyectos. Este entorno de trabajo es el curiosamente suele dar nombre a distintas distribuciones del mismo compilador. Así para MinGW tenemos, entre otros, Code::Blocks.*
+>*Pero primero una aclaración: MinGW es un compilador C/C++ que se usa desde la línea de comandos, sin embargo lo habitual es que vaya acompañado de un editor y entorno IDE que facilita su uso y la organización de proyectos. Este entorno de trabajo es que curiosamente suele dar nombre a distintas distribuciones del mismo compilador. Así para MinGW tenemos, entre otros, Code::Blocks.*
 >
 >*Por ser Code::Blocks, en la fecha en que escribo este documento, uno de los que parece que más está apoyando la comunidad de desarrolladores a la vista de sus actualizaciones, lo voy a escoger para explicar el proceso de instalación de la librería Ncurses en el compilador MinCW para entorno Windows.*
 
@@ -44,7 +44,7 @@ Tras la última línea tiene que comenzar la compilación, cuyo proceso ira most
 
 Ya tenemos compilada y lista para su uso desde MinGW la librería Ncurses para Windows.
 
-##3. Configurar incorporación de nueva librería en el entorno IDE de programación Code::Blocks
+## 3.Configurar incorporación de nueva librería en el entorno IDE de programación Code::Blocks.
 
 Ahora es necesario adaptar el programa IDE para que incorpore esta nueva librería cuando ejecute el compilador. Si instalaste la distribución **Code::Blocks** sigue los siguientes pasos:
 
